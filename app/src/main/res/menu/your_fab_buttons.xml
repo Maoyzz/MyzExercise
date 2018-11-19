@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/faboptions_favorite"
+            android:icon="@drawable/faboptions_ic_close"
+            android:title="Favorite" />
+
+        <item
+            android:id="@+id/faboptions_textsms"
+            android:icon="@drawable/faboptions_ic_overflow"
+            android:title="Message" />
+
+        <item
+            android:id="@+id/faboptions_download"
+            android:icon="@drawable/faboptions_ic_close"
+            android:title="Download" />
+
+
+        <item
+            android:id="@+id/faboptions_share"
+            android:icon="@drawable/faboptions_ic_overflow"
+            android:title="Share" />
+</menu>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Camera Use"
+                android:textColor="#333333"/>
+
+            <Button
+                android:id="@+id/btn_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Switch Button"
+                android:textColor="#333333"/>
+
+            <Button
+                android:id="@+id/btn_mydialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="MyDialog"
+                android:textColor="#333333"/>
+
+            <Button
+                android:id="@+id/btn_router"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="ARouter"
+                android:textColor="#333333"/>
+
+            <Button
+                android:id="@+id/btn_pdf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="PDFviewPager"
+                android:textColor="#333333"/>
+
+
+            <Button
+                android:id="@+id/btn_pdf_viewer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="PDFviewer"
+                android:textColor="#333333"/>
+
+            <Button
+                android:id="@+id/btn_agent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="agent"
+                android:textColor="#333333"/>
+
+            <Button
+                android:id="@+id/btn_touch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="touch"
+                android:textColor="#333333"/>
+
+            <Button
+                android:id="@+id/btn_gaode_cluster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="gaode_cluster"
+                android:textColor="#333333"/>
+
+            <Button
+                android:id="@+id/btn_kotlin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="btn_kotlin"
+                android:textColor="#333333"/>
+
+            <Button
+                android:id="@+id/btn_other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Other"
+                android:textColor="#333333"/>
+
+            <Button
+                android:id="@+id/btn_scaleAnimation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="btn_scaleAnimation"
+                android:textColor="#333333"/>
+
+            <Button
+                android:id="@+id/btn_fragment_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="btn_fragment_test"
+                android:textColor="#333333"/>
+
+            <Button
+                android:id="@+id/btn_litepal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="btn_litepal"
+                android:textColor="#333333"/>
+
+            <Button
+                android:id="@+id/btn_three_slide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="btn_three_slide"
+                android:textColor="#333333"/>
+
+            <Button
+                android:id="@+id/btn_loaderview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="btn_loaderview"
+                android:textColor="#333333"/>
+
+            <Button
+                android:id="@+id/btn_baseloader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="btn_baseloader"
+                android:textColor="#333333"/>
+
+            <Button
+                android:id="@+id/btn_AndroidUtilCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="btn_AndroidUtilCode"
+                android:textColor="#333333"/>
+            <Button
+                android:id="@+id/btn_hupu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="上下滑动"
+                android:textColor="#333333"/>
+
+            <Button
+                android:id="@+id/btn_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="fragment"
+                android:textColor="#333333"/>
+
+            <Button
+                android:id="@+id/btn_NavigationDrawer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="NavigationDrawer"
+                android:textColor="#333333"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
