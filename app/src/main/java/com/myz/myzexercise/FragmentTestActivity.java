@@ -10,6 +10,8 @@ import android.os.IBinder;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -53,6 +55,12 @@ public class FragmentTestActivity  extends BaseActivity{
         mFragments[2] = Fragment3.newInstance();
         mLayoutContent.removeAllViews();
         FragmentUtils.add(getSupportFragmentManager(), mFragments, R.id.rl_content, curIndex);
+
+        //base add fragment
+//        FragmentManager fragmentManager = getSupportFragmentManager();
+//        FragmentTransaction  transaction = fragmentManager.beginTransaction();
+//        transaction.add();
+//        transaction.commit();
     }
 
     @Override

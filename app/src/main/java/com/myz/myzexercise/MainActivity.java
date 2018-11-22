@@ -63,6 +63,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         findViewById(R.id.btn_NavigationDrawer).setOnClickListener(this);
 
+        findViewById(R.id.btn_animation).setOnClickListener(this);
+
     }
 
     @Override
@@ -137,6 +139,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.btn_NavigationDrawer:
                 startActivity(new Intent(MainActivity.this,NavigationDrawerActivity.class));
+                break;
+            case R.id.btn_animation:
+                startActivity(new Intent(MainActivity.this,AnimationActivity.class));
                 break;
 
             default:

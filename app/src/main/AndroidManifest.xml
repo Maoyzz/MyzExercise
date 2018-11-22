@@ -56,7 +56,8 @@
 
         <service android:name=".FragmentTestActivity$myService" />
 
-        <activity android:name=".NavigationDrawerActivity"></activity>
+        <activity android:name=".NavigationDrawerActivity" />
+        <activity android:name=".AnimationActivity"></activity>
     </application>
 
 </manifest>
