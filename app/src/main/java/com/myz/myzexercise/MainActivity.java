@@ -65,6 +65,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         findViewById(R.id.btn_animation).setOnClickListener(this);
 
+        findViewById(R.id.btn_dialog_fragment).setOnClickListener(this);
+
+        findViewById(R.id.jiaoziVideo).setOnClickListener(this);
+
+        findViewById(R.id.btn_litepal2).setOnClickListener(this);
+
     }
 
     @Override
@@ -142,6 +148,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_animation:
                 startActivity(new Intent(MainActivity.this,AnimationActivity.class));
+                break;
+            case R.id.btn_dialog_fragment:
+                startActivity(new Intent(MainActivity.this,DialogFragmentTest.class));
+                break;
+            case R.id.jiaoziVideo:
+                startActivity(new Intent(MainActivity.this,JiaoziVideoPlayerActivity.class));
+                break;
+            case R.id.btn_litepal2:
+                startActivity(new Intent(MainActivity.this,LitepalTestActivity.class));
                 break;
 
             default:

@@ -34,6 +34,9 @@ public class FragmentTestActivity  extends BaseActivity{
     TextView mTv3;
     @BindView(R.id.rl_content)
     RelativeLayout mLayoutContent;
+    @BindView(R.id.view_top)
+    View mViewTop;
+
 
     private Fragment[]           mFragments = new Fragment[3];
     private int curIndex = 0;
@@ -45,7 +48,7 @@ public class FragmentTestActivity  extends BaseActivity{
 
     @Override
     protected void initView() {
-
+        getSupportActionBar().hide();
     }
 
     @Override

@@ -212,6 +212,35 @@
                 android:layout_gravity="center_horizontal"
                 android:text="animation"
                 android:textColor="#333333"/>
+
+            <Button
+                android:id="@+id/btn_dialog_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="dialog_fragment"
+                android:textColor="#333333"/>
+
+            <Button
+                android:id="@+id/jiaoziVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="jiaoziVideo"
+                android:textColor="#333333"/>
+
+            <Button
+                android:id="@+id/btn_litepal2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="litelpal存图片"
+                android:textColor="#333333"/>
+
+
         </LinearLayout>
 
     </ScrollView>

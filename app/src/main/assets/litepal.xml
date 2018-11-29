@@ -6,5 +6,7 @@
 
     <list>
         <mapping class = "bean.Book"/>
+        <mapping class = "bean.Picture"/>
+
     </list>
 </litepal>

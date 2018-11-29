@@ -57,7 +57,13 @@
         <service android:name=".FragmentTestActivity$myService" />
 
         <activity android:name=".NavigationDrawerActivity" />
-        <activity android:name=".AnimationActivity"></activity>
+        <activity android:name=".AnimationActivity" />
+        <activity android:name=".DialogFragmentTest" />
+        <activity
+            android:name=".JiaoziVideoPlayerActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name=".LitepalTestActivity"></activity>
     </application>
 
 </manifest>

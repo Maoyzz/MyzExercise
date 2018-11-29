@@ -5,7 +5,7 @@ android {
     compileSdkVersion 27
     defaultConfig {
         applicationId "com.myz.myzexercise"
-        minSdkVersion 15
+        minSdkVersion 16
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
@@ -13,6 +13,12 @@ android {
         javaCompileOptions {
             annotationProcessorOptions {
                 arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+        android {
+            compileOptions {
+                sourceCompatibility JavaVersion.VERSION_1_8
+                targetCompatibility JavaVersion.VERSION_1_8
             }
         }
     }
@@ -23,8 +29,8 @@ android {
         }
     }
 
-
 }
+
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
@@ -75,6 +81,10 @@ dependencies {
     compile 'com.gongwen:swipeback:1.0.2'
     //垂直滑动viewpager
     compile 'com.github.castorflex.verticalviewpager:library:19.0.1'
+    //systembartint
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    //jiaoziVideo
+    implementation 'cn.jzvd:jiaozivideoplayer:6.4.0'
 }
 repositories {
     mavenCentral()
