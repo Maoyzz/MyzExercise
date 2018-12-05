@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AndroidUtilCodeActivity"
+    tools:context=".Practice.AndroidUtilCodeActivity"
     app:directionMode="left"
     app:maskAlpha="125"
     app:swipeBackFactor="0.5">

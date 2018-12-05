@@ -17,53 +17,56 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Practice.MainActivity">
+        </activity>
+        <activity android:name=".Practice.CameraExerciseActivity" />
+        <activity android:name=".Practice.CameraExercise1Activity" />
+        <activity android:name=".Practice.CameraExercise2Activity" />
+        <activity android:name=".Practice.SwitchActivity" />
+        <activity android:name=".Practice.BaseActivity" />
+        <activity android:name=".Practice.OtherActivity" />
+        <activity
+            android:name=".Practice.MyDialogActivity"
+            android:screenOrientation="unspecified" />
+        <activity
+            android:name=".Practice.ARouterActivity"
+            android:screenOrientation="unspecified" />
+        <activity android:name=".Practice.PDFviewerActivity" />
+        <activity android:name=".Practice.PdfViewPagerActivity" />
+        <activity android:name=".Practice.WebViewActivity" />
+        <activity android:name=".Practice.TouchActivity" />
+        <activity android:name=".Practice.GaodeClusterActivity" />
+        <activity android:name=".Practice.KotlinTestActivity" />
+        <activity android:name=".Practice.FragmentTestActivity" />
+        <activity android:name=".Practice.LitePalTest" />
+        <activity android:name=".Practice.ThreeSlideActivity" />
+        <activity android:name=".Practice.LoaderviewlibraryActivity" />
+        <activity android:name=".Practice.LoaderTestActivity" />
+        <activity android:name=".Practice.BaseLYTActivity" />
+        <activity android:name=".Practice.ProgressLYTActivity" />
+        <activity android:name=".Practice.SingleCaseActivity" />
+        <activity android:name=".Practice.VirtualViewActivity" />
+        <activity android:name=".Practice.AndroidUtilCodeActivity" />
+        <activity android:name=".Practice.VerticalViewPagerActivity" />
+
+        <service android:name=".Practice.FragmentTestActivity$myService" />
+
+        <activity android:name=".Practice.NavigationDrawerActivity" />
+        <activity android:name=".Practice.AnimationActivity" />
+        <activity android:name=".Practice.DialogFragmentTest" />
+        <activity
+            android:name=".Practice.JiaoziVideoPlayerActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Practice.LitepalTestActivity" />
+        <activity android:name=".HomePagerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CameraExerciseActivity" />
-        <activity android:name=".CameraExercise1Activity" />
-        <activity android:name=".CameraExercise2Activity" />
-        <activity android:name=".SwitchActivity" />
-        <activity android:name=".BaseActivity" />
-        <activity android:name=".OtherActivity" />
-        <activity
-            android:name=".MyDialogActivity"
-            android:screenOrientation="unspecified" />
-        <activity
-            android:name=".ARouterActivity"
-            android:screenOrientation="unspecified" />
-        <activity android:name=".PDFviewerActivity" />
-        <activity android:name=".PdfViewPagerActivity" />
-        <activity android:name=".WebViewActivity" />
-        <activity android:name=".TouchActivity" />
-        <activity android:name=".GaodeClusterActivity" />
-        <activity android:name=".KotlinTestActivity" />
-        <activity android:name=".FragmentTestActivity" />
-        <activity android:name=".LitePalTest" />
-        <activity android:name=".ThreeSlideActivity" />
-        <activity android:name=".LoaderviewlibraryActivity" />
-        <activity android:name=".LoaderTestActivity" />
-        <activity android:name=".BaseLYTActivity" />
-        <activity android:name=".ProgressLYTActivity" />
-        <activity android:name=".SingleCaseActivity" />
-        <activity android:name=".VirtualViewActivity" />
-        <activity android:name=".AndroidUtilCodeActivity" />
-        <activity android:name=".VerticalViewPagerActivity" />
-
-        <service android:name=".FragmentTestActivity$myService" />
-
-        <activity android:name=".NavigationDrawerActivity" />
-        <activity android:name=".AnimationActivity" />
-        <activity android:name=".DialogFragmentTest" />
-        <activity
-            android:name=".JiaoziVideoPlayerActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden"
-            android:screenOrientation="portrait" />
-        <activity android:name=".LitepalTestActivity"></activity>
+        <activity android:name=".Study.StudyMainActivity"></activity>
     </application>
 
 </manifest>

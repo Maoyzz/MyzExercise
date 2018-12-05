@@ -9,12 +9,10 @@ import com.alibaba.android.arouter.launcher.ARouter;
 import com.blankj.utilcode.util.Utils;
 import com.bumptech.glide.Glide;
 import com.gw.swipeback.tools.WxSwipeBackActivityManager;
-import com.myz.myzexercise.VirtualViewActivity;
 import com.tmall.wireless.tangram.TangramBuilder;
 import com.tmall.wireless.tangram.util.IInnerImageSetter;
 
 import org.litepal.LitePal;
-import org.litepal.LitePalApplication;
 
 public class App extends Application {
 

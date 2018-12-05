@@ -9,10 +9,9 @@ import android.view.WindowManager;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.myz.myzexercise.App.App;
 import com.myz.myzexercise.R;
 
-import static com.myz.myzexercise.DensityUtils.dp2px;
+import static Utils.DensityUtils.dp2px;
 
 public class IOSDialog extends Dialog {
 
