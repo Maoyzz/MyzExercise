@@ -1,6 +1,7 @@
 package weight;
 
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -8,6 +9,8 @@ import android.graphics.RectF;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
+
+import com.myz.myzexercise.R;
 
 public class CustomView extends View {
 

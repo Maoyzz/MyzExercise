@@ -1,6 +1,7 @@
 package com.myz.myzexercise.Practice
 
 import com.myz.myzexercise.R
+import com.myz.myzexercise.R.id.tv_text
 import kotlinx.android.synthetic.main.activity_kotlin_test.*
 
 class KotlinTestActivity : BaseActivity() {
@@ -10,7 +11,7 @@ class KotlinTestActivity : BaseActivity() {
     }
 
     override fun initView() {
-        tv_text.text = getMax(1,2).toString()
+//        tv_text.text = getMax(1,2).toString()
     }
 
     override fun initData() {

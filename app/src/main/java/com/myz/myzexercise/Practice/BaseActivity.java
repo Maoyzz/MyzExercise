@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import com.alibaba.android.arouter.launcher.ARouter;
 
 import butterknife.ButterKnife;
+import butterknife.Unbinder;
 
 public abstract class BaseActivity extends AppCompatActivity {
 
@@ -18,6 +19,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     protected abstract void initEvent();
     public static final String TAG = "mao";
     public Typeface iconfont;
+    protected Unbinder unbinder;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -27,11 +29,19 @@ public abstract class BaseActivity extends AppCompatActivity {
         ARouter.getInstance().inject(this);
         if(getContentLayout() != 0){
             setContentView(getContentLayout());
-            ButterKnife.bind(this);
+            unbinder = ButterKnife.bind(this);
         }
         initView();
         initData();
         initEvent();
         getSupportActionBar().setTitle(this.getClass().getSimpleName());
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if(unbinder != null){
+            unbinder.unbind();
+        }
     }
 }

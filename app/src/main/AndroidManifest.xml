@@ -8,6 +8,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
 
     <application
         android:name=".App.App"
@@ -17,13 +18,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Practice.MainActivity">
-        </activity>
+        <activity android:name=".Practice.MainActivity" />
         <activity android:name=".Practice.CameraExerciseActivity" />
         <activity android:name=".Practice.CameraExercise1Activity" />
         <activity android:name=".Practice.CameraExercise2Activity" />
         <activity android:name=".Practice.SwitchActivity" />
-        <activity android:name=".Practice.BaseActivity" />
         <activity android:name=".Practice.OtherActivity" />
         <activity
             android:name=".Practice.MyDialogActivity"
@@ -50,6 +49,7 @@
         <activity android:name=".Practice.VerticalViewPagerActivity" />
 
         <service android:name=".Practice.FragmentTestActivity$myService" />
+        <service android:name=".Study.TestService" />
 
         <activity android:name=".Practice.NavigationDrawerActivity" />
         <activity android:name=".Practice.AnimationActivity" />
@@ -66,7 +66,30 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Study.StudyMainActivity"></activity>
+        <activity android:name=".Study.StudyMainActivity" />
+        <activity android:name=".Study.ActivityTest" />
+
+        <receiver android:name=".Broadcast.Broadcast1">
+            <intent-filter>
+                <action android:name="receiverTest" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".Study.ViewStubStudyActivity" />
+        <activity android:name=".Practice.ExposingAnimationActivity" />
+        <activity android:name=".Practice.ExposingAnimation2Activity" />
+        <activity android:name=".Practice.NativeRecyclerViewTestActivity" />
+        <activity android:name=".Practice.EventDistributionActivity" />
+        <activity android:name=".Practice.FragmentTest2Activity" />
+        <activity android:name=".Study.TestServiceActivity" />
+        <activity android:name=".Practice.MDViewTestActivity" />
+        <activity
+            android:name=".Practice.ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Practice.BehaviorTestActivity" />
+        <activity android:name=".Practice.Animation2Activity" />
+        <activity android:name=".Practice.DynamicPrivilegeActivity" />
     </application>
 
 </manifest>

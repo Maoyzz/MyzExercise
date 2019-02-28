@@ -12,18 +12,8 @@ public class ProgressLYTActivity extends BaseLYTActivity {
         super.onCreate(savedInstanceState);
         setContentViewBase(R.layout.activity_progress_lyt,0,0);
 
-        findViewById(R.id.btn_start).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startProgress();
-            }
-        });
+        findViewById(R.id.btn_start).setOnClickListener(view -> startProgress());
 
-        findViewById(R.id.btn_stop).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                stopProgress();
-            }
-        });
+        findViewById(R.id.btn_stop).setOnClickListener(view -> stopProgress());
     }
 }

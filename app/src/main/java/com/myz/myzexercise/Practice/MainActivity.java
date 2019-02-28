@@ -7,7 +7,9 @@ import android.util.Log;
 import android.view.View;
 
 import com.alibaba.android.arouter.launcher.ARouter;
+import com.blankj.utilcode.util.ToastUtils;
 import com.myz.myzexercise.R;
+import com.myz.myzexercise.Study.ViewStubStudyActivity;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -72,6 +74,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         findViewById(R.id.btn_litepal2).setOnClickListener(this);
 
+        findViewById(R.id.btn_ViewStub).setOnClickListener(this);
+
+        findViewById(R.id.btn_ExposingAnimation).setOnClickListener(this);
+
+        findViewById(R.id.btn_EventDistribution).setOnClickListener(this);
+
+        findViewById(R.id.btn_ScrollingActivity).setOnClickListener(this);
+
+        findViewById(R.id.btn_BehaviorTestActivity).setOnClickListener(this);
+
+        findViewById(R.id.btn_Animation2Activity).setOnClickListener(this);
+
+        findViewById(R.id.btn_DynamicPrivilegeActivity).setOnClickListener(this);
+
     }
 
     @Override
@@ -116,7 +132,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(MainActivity.this,KotlinTestActivity.class));
                 break;
             case R.id.btn_fragment_test:
-                startActivity(new Intent(MainActivity.this,FragmentTestActivity.class));
+//                startActivity(new Intent(MainActivity.this,FragmentTestActivity.class));
+                startActivity(new Intent(MainActivity.this,FragmentTest2Activity.class));
                 break;
             case R.id.btn_litepal:
                 startActivity(new Intent(MainActivity.this,LitePalTest.class));
@@ -159,7 +176,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_litepal2:
                 startActivity(new Intent(MainActivity.this,LitepalTestActivity.class));
                 break;
-
+            case R.id.btn_ViewStub:
+                startActivity(new Intent(MainActivity.this,ViewStubStudyActivity.class));
+                break;
+            case R.id.btn_ExposingAnimation:
+                startActivity(new Intent(MainActivity.this,ExposingAnimationActivity.class));
+                break;
+            case R.id.btn_EventDistribution:
+                startActivity(new Intent(MainActivity.this,EventDistributionActivity.class));
+                break;
+            case R.id.btn_ScrollingActivity:
+                startActivity(new Intent(MainActivity.this,ScrollingActivity.class));
+                break;
+            case R.id.btn_BehaviorTestActivity:
+                startActivity(new Intent(MainActivity.this,BehaviorTestActivity.class));
+                break;
+            case R.id.btn_Animation2Activity:
+                startActivity(new Intent(MainActivity.this,Animation2Activity.class));
+                break;
+            case R.id.btn_DynamicPrivilegeActivity:
+                startActivity(new Intent(MainActivity.this,DynamicPrivilegeActivity.class));
+                break;
             default:
         }
     }
@@ -170,5 +207,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if(requestCode == 100){
             Log.e("mao", "100");
         }
+    }
+
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        ToastUtils.showShort("this is single task");
     }
 }

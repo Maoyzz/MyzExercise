@@ -3,6 +3,7 @@ apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 27
+    buildToolsVersion '27.0.3'
     defaultConfig {
         applicationId "com.myz.myzexercise"
         minSdkVersion 16
@@ -33,9 +34,10 @@ android {
 
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    api fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:27.1.1'
-    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
@@ -49,8 +51,8 @@ dependencies {
 
     // 替换成最新版本, 需要注意的是api
     // 要与compiler匹配使用，均使用最新版可以保证兼容
-    compile 'com.alibaba:arouter-api:1.4.0'
-    annotationProcessor 'com.alibaba:arouter-compiler:1.2.1'
+    compile 'com.alibaba:arouter-api:1.4.1'
+    annotationProcessor 'com.alibaba:arouter-compiler:1.2.2'
 
     compile 'com.github.barteksc:android-pdf-viewer:2.8.2'
     compile 'es.voghdev.pdfviewpager:library:1.0.3'
@@ -63,6 +65,7 @@ dependencies {
     compile 'com.amap.api:location:3.3.0'
     compile 'com.amap.api:search:5.0.0'
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
     apply plugin: 'kotlin-android-extensions'
     apply plugin: 'kotlin-android'
     apply plugin: 'com.android.application'
@@ -76,7 +79,7 @@ dependencies {
     }
     compile 'com.alibaba.android:tangram:2.0.5@aar'
     implementation 'com.github.bumptech.glide:glide:4.8.0'
-    implementation 'com.blankj:utilcode:1.21.2'
+    implementation 'com.blankj:utilcode:1.23.4'
     //侧滑返回
     compile 'com.gongwen:swipeback:1.0.2'
     //垂直滑动viewpager
@@ -85,8 +88,12 @@ dependencies {
     compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
     //jiaoziVideo
     implementation 'cn.jzvd:jiaozivideoplayer:6.4.0'
+
+    compile 'com.wang.avi:library:2.1.3'
+    compile project(path: ':module1')
 }
 repositories {
     mavenCentral()
     maven { url "https://jitpack.io" }
+    jcenter()
 }

@@ -99,6 +99,22 @@ public class FragmentTestActivity  extends BaseActivity{
         public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
             return inflater.inflate(R.layout.layout_fragment1,container,false);
         }
+
+        @Override
+        public void onStart() {
+            super.onStart();
+        }
+
+        @Override
+        public void onResume() {
+            super.onResume();
+        }
+
+        @Override
+        public void setUserVisibleHint(boolean isVisibleToUser) {
+            super.setUserVisibleHint(isVisibleToUser);
+
+        }
     }
 
     public static class Fragment2 extends Fragment{
@@ -136,6 +152,7 @@ public class FragmentTestActivity  extends BaseActivity{
             return inflater.inflate(R.layout.layout_fragment3,container,false);
 
         }
+
     }
     public static class myService extends Service{
 

@@ -240,6 +240,70 @@
                 android:text="litelpal存图片"
                 android:textColor="#333333"/>
 
+            <Button
+                android:id="@+id/btn_ViewStub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="ViewStub"
+                android:textColor="#333333"/>
+
+
+            <Button
+                android:id="@+id/btn_ExposingAnimation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="ExposingAnimation"
+                android:textColor="#333333"/>
+
+            <Button
+                android:id="@+id/btn_EventDistribution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="事件分发"
+                android:textColor="#333333"/>
+
+            <Button
+                android:id="@+id/btn_ScrollingActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="MD滑动"
+                android:textColor="#333333"/>
+
+            <Button
+                android:id="@+id/btn_BehaviorTestActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Behavior练习"
+                android:textColor="#333333"/>
+
+            <Button
+                android:id="@+id/btn_Animation2Activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="动画究极练习"
+                android:textColor="#333333"/>
+
+
+            <Button
+                android:id="@+id/btn_DynamicPrivilegeActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="动态权限究极练习"
+                android:textColor="#333333"/>
 
         </LinearLayout>
 
